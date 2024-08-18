@@ -11,6 +11,10 @@ export default function NavBar() {
       name: 'Home'
     },
     {
+      url: '/experience',
+      name: 'Experience'
+    },
+    {
       url: '/projects',
       name: 'Projects'
     },
@@ -24,10 +28,8 @@ export default function NavBar() {
   return (
     <div className={`${styles.nav_bar}`}>
       {
-        map(routes, (route)=> {
-          if(pathName !== route.url) {
-            return <Link href={route.url}>{route.name}</Link>
-          }
+        map(routes, (route, index)=> {
+            return <Link href={route.url} className={pathName === route.url ? `${styles.active_route}` : ''} key={index}>{route.name}</Link>
         })
       }
     </div>
