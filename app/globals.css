@@ -23,6 +23,15 @@ body {
 body {
   color: #DEE2E6;
 }
+main {
+  margin-top: 1rem;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+  min-height: 100vh;
+}
 
 a {
   color: inherit;

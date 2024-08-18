@@ -1,12 +1,35 @@
 'use client';
-// import Image from "next/image";
-import Link from 'next/link'
-// import styles from "./NavBar.module.css";
+import Link from 'next/link';
+import styles from './NavBar.module.css'
+import { usePathname } from 'next/navigation'
+import { map } from 'lodash';
 
 export default function NavBar() {
+  const routes = [
+    {
+      url: '/',
+      name: 'Home'
+    },
+    {
+      url: '/projects',
+      name: 'Projects'
+    },
+    {
+      url: '/contact',
+      name: 'Contact'
+    }
+  ]
+  const pathName = usePathname();
+  
   return (
-    <div>
-      <Link href={'/contact'}>Contact</Link>
+    <div className={`${styles.nav_bar}`}>
+      {
+        map(routes, (route)=> {
+          if(pathName !== route.url) {
+            return <Link href={route.url}>{route.name}</Link>
+          }
+        })
+      }
     </div>
   );
 }
