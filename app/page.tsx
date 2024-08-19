@@ -16,7 +16,11 @@ export default function Home() {
         <div className={`${styles.hero_right}`}>
           <div className={`${styles.hero_text}`}>
             <h1>Matt Gefen</h1>
-            <h2>Full-Stack Engineer</h2>
+            <div className={`${styles.hero_subtitle}`}>
+              <h2 className={`${styles.rotating_text}`}>Full-Stack Engineer</h2>
+              <h2 className={`${styles.rotating_text}`}>Lifelong Learner</h2>
+              <h2 className={`${styles.rotating_text}`}>Problem Solver</h2>
+            </div>
             <div className={`${styles.social_links}`}>
             <Link href={'https://github.com/matt-gefen'} target="_blank" className={`${styles.social_link}`}>
               <Github/>
@@ -36,7 +40,7 @@ export default function Home() {
       </div>
       <div className={`${styles.main_body}`}>
         <p>
-          Hi, I'm Matt Gefen! I'm a  developer, a lifelong learner, and a passionate problem solver. I currently work at <span><Link className={`${styles.embedded_link}`} href={'roadtripnation.com'}>Roadtrip Nation</Link></span> as a Full-Stack Engineer using Typescript, Next.js, and MongoDB.
+          Hi, I'm Matt Gefen! I'm a developer currently working at <span><Link className={`${styles.embedded_link}`} href={'roadtripnation.com'}>Roadtrip Nation</Link></span> using Typescript, Next.js, and MongoDB to craft impactful software.
         </p>
         <p>
           I create accessible and educational experiences using best-in-class video content. These tools enable students looking for passion in their careers to find guidance fit for them.
