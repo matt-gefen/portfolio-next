@@ -22,15 +22,19 @@ body {
 body {
   color: #DEE2E6;
 }
+
 main {
-  margin-top: 100px;
+  margin-top: 80px;
   max-width: 40vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: left;
-  min-height: 100vh;
-  @media (max-width: 700px) {
+
+  @media (max-width: 1200px) {
+    max-width: 60vw;
+  }
+  @media (max-width: 900px) {
     max-width: 90vw;
   }
 }
@@ -41,30 +45,35 @@ a {
   display: inline-block;
   position: relative;
 }
+
 a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #00ffbb;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffbb;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
+
 a:hover {
   color: #00ffbb;
 }
+
 a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 h1 {
   font-style: normal;
   font-weight: 700;
   color: #FBFCFC;
 }
+
 h2 {
   color: #CED4DA;
 }
