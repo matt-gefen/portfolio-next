@@ -11,8 +11,8 @@ export default function NavBar() {
       name: 'Home'
     },
     {
-      url: '/experience',
-      name: 'Experience'
+      url: '/work',
+      name: 'Work'
     },
     {
       url: '/projects',
