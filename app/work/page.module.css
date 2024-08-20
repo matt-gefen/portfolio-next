@@ -11,8 +11,18 @@
 }
 .work_company {
   color: #09bc8a;
+  margin-bottom: 3px;
 }
 .work_role {
   color: #CED4DA;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work_list {
+  list-style-type: disc; /* Restores bullet points */
+  padding-left: 1.5rem; /* Adds padding to align bullets with the text */
+  margin: 0; /* Removes default margin */
 }

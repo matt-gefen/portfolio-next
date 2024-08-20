@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <div className={`${styles.main_body}`}>
         <p>
-          Hi, I'm Matt Gefen! I'm a developer currently working at <span><Link className={`${styles.embedded_link}`} href={'roadtripnation.com'}>Roadtrip Nation</Link></span> using Typescript, Next.js, and MongoDB to craft impactful software.
+          {"Hi, I\'m Matt Gefen! I\'m a developer currently working at "}<span><Link className={`${styles.embedded_link}`} href={'roadtripnation.com'}>Roadtrip Nation</Link></span> using Typescript, Next.js, and MongoDB to craft impactful software.
         </p>
         <p>
           I create accessible and educational experiences using best-in-class video content. These tools enable students looking for passion in their careers to find guidance fit for them.
