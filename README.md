@@ -4,3 +4,5 @@ Hi Folks! This is the new and updated portfolio site that I am building in Next.
 This site is not deployed yet and is currently in development.
 
 ![Matt icon](app/assets/M@Icon.png)
+
+This icon was made using Dicebear (Lorelei) under CC0 1.0
