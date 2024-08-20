@@ -77,3 +77,12 @@ h1 {
 h2 {
   color: #CED4DA;
 }
+
+.solid_line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #09bc8a;
+  margin-top: 20px;
+  padding: 0;
+}

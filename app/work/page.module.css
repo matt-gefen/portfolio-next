@@ -1,0 +1,18 @@
+.hero {
+  margin-bottom: 20px;
+  .hero_header {
+    margin-bottom: 20px;
+  }
+}
+.work_body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.work_company {
+  color: #09bc8a;
+}
+.work_role {
+  color: #CED4DA;
+  margin-bottom: 30px;
+}

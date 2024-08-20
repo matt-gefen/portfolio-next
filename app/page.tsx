@@ -24,16 +24,13 @@ export default function Home() {
             <div className={`${styles.social_links}`}>
             <Link href={'https://github.com/matt-gefen'} target="_blank" className={`${styles.social_link}`}>
               <Github/>
-              Github
             </Link>
             <Link href={'https://www.linkedin.com/in/mattgefen/'} target="_blank" className={`${styles.social_link}`}>
               <LinkedIn/>
-              LinkedIn
             </Link>
-            <Link href={'mailto: matt.gefen@gmail.com'} target="_blank" className={`${styles.social_link}`}>
+            {/* <Link href={'mailto: matt.gefen@gmail.com'} target="_blank" className={`${styles.social_link}`}>
               <Mail/>
-              Mail
-            </Link>
+            </Link> */}
           </div>
           </div>
         </div>
