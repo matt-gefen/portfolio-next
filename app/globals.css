@@ -86,3 +86,15 @@ h2 {
   margin-top: 20px;
   padding: 0;
 }
+.embedded_link {
+  color: #09bc8a;
+  & svg {
+    fill: #09bc8a;
+  }
+}
+.embedded_link:hover {
+  color: #00ffbb;
+  & svg {
+    fill: #00ffbb;
+  }
+}
