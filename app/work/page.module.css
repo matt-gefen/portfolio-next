@@ -9,6 +9,11 @@
   flex-direction: column;
   gap: 30px;
 }
+.work_body_child {
+  background-color: #1E1F23;
+  padding: 20px;
+  border-radius: .25rem;
+}
 .work_company {
   color: #09bc8a;
   margin-bottom: 3px;
@@ -21,8 +26,8 @@
   justify-content: space-between;
 }
 
-.work_list {
-  list-style-type: disc; /* Restores bullet points */
-  padding-left: 1.5rem; /* Adds padding to align bullets with the text */
-  margin: 0; /* Removes default margin */
+.work_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

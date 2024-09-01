@@ -1,12 +1,97 @@
 'use client';
 import Link from 'next/link';
-import styles from './page.module.css'
+import styles from '../projects/page.module.css'
 import experience from '../data/experience.json'
+import Image from 'next/image';
+import ArrowOut from '../components/icons/ArrowOut';
+import ArrowUp from '../components/icons/ArrowUp';
 
 export default function Work() {
   return (
     <main>
       <div className={`${styles.hero}`}>
+        <h1 className={`${styles.hero_header}`}>Work</h1>
+        {/* <p className={`${styles.hero_text}`}>
+          Some things that I've worked on
+        </p> */}
+        <hr className="solid_line" />
+      </div>
+      <div className={`${styles.projects_body}`}>
+        <div className={`${styles.projects_body_child}`}>
+          <div className={`${styles.project}`}>
+            <h3>
+                Full-Stack Engineer @ <Link
+                  className={`embedded_link ${styles.project_link}`}
+                  href={'https://roadtripnation.com/'}
+                >
+                    Roadtrip Nation
+                    <ArrowUp />
+                </Link>
+              </h3>
+            <div className={`${styles.project_body}`}>
+              <ul className={`${styles.project_stack}`}>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>JavaScript</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>TypeScript</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Next.js</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>HTML & SCSS</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>React</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>MongoDB</div>
+                </li>
+                {/* <li>
+                <div className={`${styles.project_stack_element}`}>Storybook</div>
+              </li> */}
+              </ul>
+              <div className={`${styles.project_description}`}>
+                <p>
+                  In this role, I've specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
+                </p>
+              </div>
+            </div>
+          </div>      
+
+          <div className={`${styles.projects_body_child}`}>
+              <div className={`${styles.project}`}>
+                <h3>
+                  Analytics Engineer @ <Link className={`embedded_link`} href={'https://yearup.org/'}>YearUp</Link>
+                </h3>
+                <div className={`${styles.project_body}`}>
+                  <ul className={`${styles.project_stack}`}>
+                    <li>
+                      <div className={`${styles.project_stack_element}`}>SQL</div>
+                    </li>
+                    <li>
+                      <div className={`${styles.project_stack_element}`}>dbt</div>
+                    </li>
+                    <li>
+                      <div className={`${styles.project_stack_element}`}>Snowflake</div>
+                    </li>
+                    <li>
+                      <div className={`${styles.project_stack_element}`}>Tableau</div>
+                    </li>
+                  </ul>
+                  <div className={`${styles.project_description}`}>
+                    <p>
+                      Some text about Year Up
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={`${styles.hero}`}>
         <h1 className={`${styles.hero_header}`}>Work</h1>
         <p className={`${styles.hero_text}`}>
           Making an impact is the cornerstone of my career.
@@ -26,20 +111,11 @@ export default function Work() {
           <p className={`${styles.work_role}`}>
             <span>Full-Stack Engineer</span> <span>2022 - Present</span>
           </p>
-          <ul className={`${styles.work_list}`}>
-            <li className={`${styles.work_li}`}>
-              Build interactive and accessible web courses geared towards connecting over 15,000 students annually with tangible career paths using React/Typescript.
-            </li>
-            <li className={`${styles.work_li}`}>
-              Craft RESTful APIs and supporting data infrastructure to provide custom resources to over 30unique partners.
-            </li>
-            <li className={`${styles.work_li}`}>
-              Architect the back end and front end of a vertical video playlist feature inspired by YouTubeShorts, enabling the presentation of over 100 hours of unique video content to more than 2,000 daily users.
-            </li>
-            <li className={`${styles.work_li}`}>
-              Leading the refactor and migration of products to a modern codebase using Next.js 14, improving performance and maintainability with a seamless user experience.
-            </li>
-          </ul>
+          <div className={`${styles.work_text_container}`}>
+          <p className={`${styles.work_text}`}>
+            In this role, I've specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
+          </p>
+          </div>
         </div>
         <hr className="solid_line"/>
         <div className={`${styles.work_body_child}`}>
@@ -58,7 +134,7 @@ export default function Work() {
             A whole paragraph here about YU and my contribution
           </p>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
