@@ -1,9 +1,6 @@
 'use client';
 import Link from 'next/link';
 import styles from '../projects/page.module.css'
-import experience from '../data/experience.json'
-import Image from 'next/image';
-import ArrowOut from '../components/icons/ArrowOut';
 import ArrowUp from '../components/icons/ArrowUp';
 
 export default function Experience() {
@@ -25,6 +22,7 @@ export default function Experience() {
             <Link
               className={`embedded_link ${styles.project_link}`}
               href={'https://roadtripnation.com/'}
+              target='_blank'
             >
                 Full-Stack Engineer at Roadtrip Nation
                 <span className={`${styles.project_icon}`}>
@@ -69,6 +67,7 @@ export default function Experience() {
           <Link
               className={`embedded_link ${styles.project_link}`}
               href={'https://yearup.org/'}
+              target='_blank'
             >
                 Analytics Engineer at YearUp
                 <span className={`${styles.project_icon}`}>
