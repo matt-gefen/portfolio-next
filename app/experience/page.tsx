@@ -28,7 +28,7 @@ export default function Experience() {
             >
                 Full-Stack Engineer at Roadtrip Nation
                 <span className={`${styles.project_icon}`}>
-                  <ArrowUp />
+                  <ArrowUp size='18px'/>
                 </span>
             </Link>
             <div className={`${styles.project_body}`}>
@@ -51,9 +51,6 @@ export default function Experience() {
                 <li>
                   <div className={`${styles.project_stack_element}`}>MongoDB</div>
                 </li>
-                {/* <li>
-                <div className={`${styles.project_stack_element}`}>Storybook</div>
-              </li> */}
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
@@ -73,11 +70,9 @@ export default function Experience() {
               className={`embedded_link ${styles.project_link}`}
               href={'https://yearup.org/'}
             >
-                <span className={`${styles.project_link_text}`}>
-                <h3>Analytics Engineer at YearUp</h3> 
-                </span>
+                Analytics Engineer at YearUp
                 <span className={`${styles.project_icon}`}>
-                  <ArrowUp />
+                  <ArrowUp size='18px'/>
                 </span>
             </Link>
             <div className={`${styles.project_body}`}>
