@@ -1,6 +1,6 @@
 const ArrowUp = () => {
   return (
-<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<svg width="800px" height="800px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 
 <g data-name="Layer 2">
 

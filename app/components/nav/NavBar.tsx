@@ -11,17 +11,13 @@ export default function NavBar() {
       name: 'Home'
     },
     {
-      url: '/work',
-      name: 'Work'
+      url: '/experience',
+      name: 'Experience'
     },
     {
       url: '/projects',
       name: 'Projects'
     },
-    {
-      url: '/contact',
-      name: 'Contact'
-    }
   ]
   const pathName = usePathname();
   

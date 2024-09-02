@@ -6,11 +6,11 @@ import Image from 'next/image';
 import ArrowOut from '../components/icons/ArrowOut';
 import ArrowUp from '../components/icons/ArrowUp';
 
-export default function Work() {
+export default function Experience() {
   return (
     <main>
       <div className={`${styles.hero}`}>
-        <h1 className={`${styles.hero_header}`}>Work</h1>
+        <h1 className={`${styles.hero_header}`}>Experience</h1>
         {/* <p className={`${styles.hero_text}`}>
           Some things that I've worked on
         </p> */}
@@ -18,16 +18,19 @@ export default function Work() {
       </div>
       <div className={`${styles.projects_body}`}>
         <div className={`${styles.projects_body_child}`}>
+          <div className={`${styles.project_timeline}`}>
+            <h4>2022 - Present</h4>
+          </div>
           <div className={`${styles.project}`}>
-            <h3>
-                Full-Stack Engineer @ <Link
-                  className={`embedded_link ${styles.project_link}`}
-                  href={'https://roadtripnation.com/'}
-                >
-                    Roadtrip Nation
-                    <ArrowUp />
-                </Link>
-              </h3>
+            <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://roadtripnation.com/'}
+            >
+                Full-Stack Engineer at Roadtrip Nation
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp />
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
@@ -58,35 +61,46 @@ export default function Work() {
                 </p>
               </div>
             </div>
-          </div>      
+          </div>
+        </div>
+        <div className={`${styles.projects_body_child}`}>
+          <div className={`${styles.project_timeline}`}>
+            <h4>2020 - 2021</h4>
+          </div>
 
-          <div className={`${styles.projects_body_child}`}>
-              <div className={`${styles.project}`}>
-                <h3>
-                  Analytics Engineer @ <Link className={`embedded_link`} href={'https://yearup.org/'}>YearUp</Link>
-                </h3>
-                <div className={`${styles.project_body}`}>
-                  <ul className={`${styles.project_stack}`}>
-                    <li>
-                      <div className={`${styles.project_stack_element}`}>SQL</div>
-                    </li>
-                    <li>
-                      <div className={`${styles.project_stack_element}`}>dbt</div>
-                    </li>
-                    <li>
-                      <div className={`${styles.project_stack_element}`}>Snowflake</div>
-                    </li>
-                    <li>
-                      <div className={`${styles.project_stack_element}`}>Tableau</div>
-                    </li>
-                  </ul>
-                  <div className={`${styles.project_description}`}>
-                    <p>
-                      Some text about Year Up
-                    </p>
-                  </div>
-                </div>
+          <div className={`${styles.project}`}>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://yearup.org/'}
+            >
+                <span className={`${styles.project_link_text}`}>
+                <h3>Analytics Engineer at YearUp</h3> 
+                </span>
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp />
+                </span>
+            </Link>
+            <div className={`${styles.project_body}`}>
+              <ul className={`${styles.project_stack}`}>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>SQL</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>dbt</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Snowflake</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Tableau</div>
+                </li>
+              </ul>
+              <div className={`${styles.project_description}`}>
+                <p>
+                  Some text about Year Up
+                </p>
               </div>
+            </div>
           </div>
         </div>
       </div>
