@@ -16,9 +16,20 @@ export default function Projects() {
       </div>
       <div className={`${styles.projects_body}`}>
         <div className={`${styles.projects_body_child}`}>
-          <div className={`${styles.project} ${styles.project_non_grid}`}>
+          <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
             <h3>Skills Navigator Workforce Hubs</h3>
             <div className={`${styles.project_body}`}>
+            <ul className={`${styles.project_stack}`}>
+            <li>
+            <div className={`${styles.project_stack_element}`}>TypeScript</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>Next.js</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>MongoDB</div>
+          </li>
+        </ul>
               <div className={`${styles.project_description}`}>
                 <p>
                   A set of modular career hubs that provide students and young adults with tools to explore career options in their local communities. Each hub comes with a custom-tailored pathways experience that begins with a short quiz.
@@ -43,9 +54,20 @@ export default function Projects() {
           </div>
         </div>
         <div className={`${styles.projects_body_child}`}>
-          <div className={`${styles.project} ${styles.project_non_grid}`}>
+          <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
             <h3>Leader Profiles</h3>
             <div className={`${styles.project_body}`}>
+            <ul className={`${styles.project_stack}`}>
+          <li>
+            <div className={`${styles.project_stack_element}`}>TypeScript</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>Next.js</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>MongoDB</div>
+          </li>
+        </ul>
               <div className={`${styles.project_description}`}>
                 <p>
                   At Roadtrip Nation, we've built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders.
@@ -71,9 +93,23 @@ export default function Projects() {
           </div>
         </div>
         <div className={`${styles.projects_body_child}`}>
-          <div className={`${styles.project} ${styles.project_non_grid}`}>
+          <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
             <h3>Roadtrip Nation Experience Course</h3>
             <div className={`${styles.project_body} ${styles.project_non_grid}`}>
+            <ul className={`${styles.project_stack}`}>
+          <li>
+            <div className={`${styles.project_stack_element}`}>JavaScript</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>HTML & SCSS</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>React</div>
+          </li>
+          <li>
+            <div className={`${styles.project_stack_element}`}>MongoDB</div>
+          </li>
+        </ul>
               <div className={`${styles.project_description}`}>
                 <p>
                   An in-depth, classroom-based immersive for students and educators. This course guides students through a reflection on their own skills and connects those with career options and real-world stories from the RTN interview archive.
@@ -97,26 +133,6 @@ export default function Projects() {
                 </Link>
           </div>
         </div>
-        <ul className={`${styles.project_stack}`}>
-          <li>
-            <div className={`${styles.project_stack_element}`}>JavaScript</div>
-          </li>
-          <li>
-            <div className={`${styles.project_stack_element}`}>TypeScript</div>
-          </li>
-          <li>
-            <div className={`${styles.project_stack_element}`}>Next.js</div>
-          </li>
-          <li>
-            <div className={`${styles.project_stack_element}`}>HTML & SCSS</div>
-          </li>
-          <li>
-            <div className={`${styles.project_stack_element}`}>React</div>
-          </li>
-          <li>
-            <div className={`${styles.project_stack_element}`}>MongoDB</div>
-          </li>
-        </ul>
         <hr className="solid_line" />
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
