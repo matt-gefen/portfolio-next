@@ -163,7 +163,7 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  I analyzed the impact of media and marketing strategies across all channels for national retail clients, driving key optimizations.
+                  Analyzed the impact of media and marketing strategies across all channels for national retail clients, driving key optimizations.
                 </p>
               </div>
             </div>
