@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from './page.module.css'
 import ArrowOut from '../components/icons/ArrowOut';
 import Image from 'next/image';
+import ArrowUp from '../components/icons/ArrowUp';
 
 export default function Projects() {
   return (
@@ -17,7 +18,16 @@ export default function Projects() {
       <div className={`${styles.projects_body}`}>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
-            <h3>Skills Navigator Workforce Hubs</h3>
+            <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://roadtripnation.com/workforce/phl'}
+              target='_blank'
+            >
+                Skills Navigator Workforce Hubs
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
             <ul className={`${styles.project_stack}`}>
             <li>
@@ -55,7 +65,16 @@ export default function Projects() {
         </div>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
-            <h3>Leader Profiles</h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://roadtripnation.com/leader/john-legend'}
+              target='_blank'
+            >
+                Leader Profiles
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
             <ul className={`${styles.project_stack}`}>
           <li>
@@ -94,7 +113,16 @@ export default function Projects() {
         </div>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
-            <h3>Roadtrip Nation Experience Course</h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://roadtripnation.com/experience/course/rtn/overview'}
+              target='_blank'
+            >
+                Roadtrip Nation Experience Course
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body} ${styles.project_non_grid}`}>
             <ul className={`${styles.project_stack}`}>
           <li>
@@ -136,9 +164,16 @@ export default function Projects() {
         <hr className="solid_line" />
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
-            <h3>
-              Radiant Hack
-            </h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://radiant-hack.vercel.app/'}
+              target='_blank'
+            >
+                Radiant Hack
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
@@ -151,22 +186,28 @@ export default function Projects() {
                   <div className={`${styles.project_stack_element}`}>HTML & CSS</div>
                 </li>
               </ul>
-            </div>
 
             <div className={`${styles.project_description}`}>
               <p>
-                A <span><Link className={'embedded_link'} href={'https://radiant-hack.vercel.app/'} target='_blank'>WIP documentation site</Link></span> for ttrpg house rules.
+                A WIP documentation site for ttrpg house rules.
               </p>
-              <br></br>
-              <p>Based on The Black Hack and made with Nextra.</p>
+              <p>Based on <i>The Black Hack</i> and made with <i>Nextra</i>.</p>
+            </div>
             </div>
           </div>
         </div>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
-            <h3>
-              Pong
-            </h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://github.com/matt-gefen/rm_pong'}
+              target='_blank'
+            >
+                Pong
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
@@ -181,7 +222,7 @@ export default function Projects() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Simple game of <span><Link className={'embedded_link'} href={'https://github.com/matt-gefen/rm_pong'} target='_blank'>Pong</Link></span>, complete with music. Downloadable on MacOS.
+                  Simple game of Pong, complete with music. Downloadable on MacOS.
                 </p>
               </div>
             </div>
@@ -189,9 +230,16 @@ export default function Projects() {
         </div>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
-            <h3>
-              Poemverse
-            </h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://github.com/matt-gefen/poemverse'}
+              target='_blank'
+            >
+                Poemverse
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
@@ -206,7 +254,7 @@ export default function Projects() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Full-stack <span><Link className={'embedded_link'} href={'https://github.com/matt-gefen/poemverse'} target='_blank'>poetry anthology builder</Link></span> using poems sources from the PoetryDB api.
+                  Full-stack poetry anthology builder using poems sources from the <i>PoetryDB</i> api.
                 </p>
                 <p>Currently offline.</p>
               </div>
@@ -215,9 +263,16 @@ export default function Projects() {
         </div>
         <div className={`${styles.projects_body_child}`}>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
-            <h3>
-              BirbWatcher
-            </h3>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://github.com/matt-gefen/birb-watcher'}
+              target='_blank'
+            >
+                Birbwatcher
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
@@ -232,7 +287,7 @@ export default function Projects() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Personal <span><Link className={'embedded_link'} href={'https://github.com/matt-gefen/birb-watcher'} target='_blank'>bird watching log</Link></span> with bird taxonomy and species detail sourced from Ebird.
+                  Personal bird watching log with bird taxonomy and species detail sourced from Ebird.
                 </p>
               </div>
             </div>
