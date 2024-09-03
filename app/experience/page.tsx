@@ -69,7 +69,7 @@ export default function Experience() {
               href={'https://yearup.org/'}
               target='_blank'
             >
-                Analytics Engineer at YearUp
+                Analytics Engineer at Year Up
                 <span className={`${styles.project_icon}`}>
                   <ArrowUp size='18px'/>
                 </span>
@@ -91,7 +91,7 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Some text about Year Up
+                  I standardized data structures and crafted conformed dimensional models using dbt, allowing teams to access and use data more effectively. On top of this, I build decision support tools and accessible dashboards for teams across the organization. 
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Experience() {
               href={'https://yearup.org/'}
               target='_blank'
             >
-                Sales and Market Research Analyst at YearUp
+                Sales and Market Research Analyst at Year Up
                 <span className={`${styles.project_icon}`}>
                   <ArrowUp size='18px'/>
                 </span>
@@ -130,7 +130,7 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Some text about Year Up
+                  Automated the reporting of key sales metrics for internal leadership and board members using SQL and Python. I also developed standardized analytics tools in Tableau, providing corporate engagement specialists with accessible, real-time insights into demand KPIs.
                 </p>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Experience() {
               href={'https://havasmedia.com/'}
               target='_blank'
             >
-                Marketing Analytics and Data Consulting Analyst at Havas Media
+                Data Consulting Analyst at Havas Media
                 <span className={`${styles.project_icon}`}>
                   <ArrowUp size='18px'/>
                 </span>
@@ -155,21 +155,15 @@ export default function Experience() {
             <div className={`${styles.project_body}`}>
               <ul className={`${styles.project_stack}`}>
                 <li>
-                  <div className={`${styles.project_stack_element}`}>SQL</div>
+                  <div className={`${styles.project_stack_element}`}>Excel</div>
                 </li>
                 <li>
-                  <div className={`${styles.project_stack_element}`}>dbt</div>
-                </li>
-                <li>
-                  <div className={`${styles.project_stack_element}`}>Snowflake</div>
-                </li>
-                <li>
-                  <div className={`${styles.project_stack_element}`}>Tableau</div>
+                  <div className={`${styles.project_stack_element}`}>Google Tag Manager/Analytics</div>
                 </li>
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  Some text about Year Up
+                  I analyzed the impact of media and marketing strategies across all channels for national retail clients, driving key optimizations.
                 </p>
               </div>
             </div>
