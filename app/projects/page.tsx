@@ -16,7 +16,7 @@ export default function Projects() {
         <hr className="solid_line" />
       </div>
       <div className={`${styles.projects_body}`}>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Skills Navigator'>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
             <Link
               className={`embedded_link ${styles.project_link}`}
@@ -63,7 +63,7 @@ export default function Projects() {
                 </Link>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Leader Profiles'>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
@@ -89,7 +89,7 @@ export default function Projects() {
         </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  At Roadtrip Nation, we&aposve built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders.
+                  At Roadtrip Nation, we&apos;ve built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders.
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Projects() {
                 </Link>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='rtne'>
           <div className={`${styles.project} ${styles.project_adjusted_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
@@ -162,7 +162,7 @@ export default function Projects() {
           </div>
         </div>
         <hr className="solid_line" />
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Radiant Hack'>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
@@ -196,7 +196,40 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Portfilio 1'>
+          <div className={`${styles.project} ${styles.project_non_grid}`}>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://mattgefen.com/'}
+              target='_blank'
+            >
+                Original Portfolio Site
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
+            </Link>
+            <div className={`${styles.project_body}`}>
+              <ul className={`${styles.project_stack}`}>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>React</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>HTML & SCSS</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Netlify</div>
+                </li>
+              </ul>
+
+            <div className={`${styles.project_description}`}>
+              <p>
+                The previous iteration of my personal portfolio website!
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.projects_body_child}`} id='Pong'>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
@@ -228,7 +261,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Poemverse'>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
@@ -261,7 +294,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='BirbWatcher'>
           <div className={`${styles.project} ${styles.project_non_grid}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}

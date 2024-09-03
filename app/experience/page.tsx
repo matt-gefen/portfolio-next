@@ -14,7 +14,7 @@ export default function Experience() {
         <hr className="solid_line" />
       </div>
       <div className={`${styles.projects_body}`}>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Full Stack Engineer'>
           <div className={`${styles.project_timeline}`}>
             <h4>2022 - Present</h4>
           </div>
@@ -52,13 +52,13 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  In this role, I&aposve specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
+                  In this role, I&apos;ve specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className={`${styles.projects_body_child}`}>
+        <div className={`${styles.projects_body_child}`} id='Analytics Engineer'>
           <div className={`${styles.project_timeline}`}>
             <h4>2020 - 2021</h4>
           </div>
@@ -97,52 +97,85 @@ export default function Experience() {
             </div>
           </div>
         </div>
-      </div>
+        <div className={`${styles.projects_body_child}`} id='Sales and Market Research Analyst'>
+          <div className={`${styles.project_timeline}`}>
+            <h4>2018 - 2020</h4>
+          </div>
 
-      {/* <div className={`${styles.hero}`}>
-        <h1 className={`${styles.hero_header}`}>Work</h1>
-        <p className={`${styles.hero_text}`}>
-          Making an impact is the cornerstone of my career.
-        </p>
-        <p className={`${styles.hero_text}`}>
-          {"Here's what I've done so far:"}
-        </p>
-        <hr className="solid_line"/>
-      </div>
-      <div className={`${styles.work_body}`}>
-        <div className={`${styles.work_body_child}`}>
-          <h2 className={`${styles.work_company}`}>
-            <Link href='https://roadtripnation.com/' target='_blank'>
-              Roadtrip Nation
+          <div className={`${styles.project}`}>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://yearup.org/'}
+              target='_blank'
+            >
+                Sales and Market Research Analyst at YearUp
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
             </Link>
-          </h2>
-          <p className={`${styles.work_role}`}>
-            <span>Full-Stack Engineer</span> <span>2022 - Present</span>
-          </p>
-          <div className={`${styles.work_text_container}`}>
-          <p className={`${styles.work_text}`}>
-            In this role, I've specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
-          </p>
+            <div className={`${styles.project_body}`}>
+              <ul className={`${styles.project_stack}`}>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>SQL</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>dbt</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Snowflake</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Tableau</div>
+                </li>
+              </ul>
+              <div className={`${styles.project_description}`}>
+                <p>
+                  Some text about Year Up
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <hr className="solid_line"/>
-        <div className={`${styles.work_body_child}`}>
-          <h2 className={`${styles.work_company}`}>
-            <Link href='https://yearup.org/' target='_blank'>
-              Year Up
+        <div className={`${styles.projects_body_child}`} id='Marketing Analytics and Data Consulting Analyst'>
+          <div className={`${styles.project_timeline}`}>
+            <h4>2017 - 2018</h4>
+          </div>
+
+          <div className={`${styles.project}`}>
+          <Link
+              className={`embedded_link ${styles.project_link}`}
+              href={'https://havasmedia.com/'}
+              target='_blank'
+            >
+                Marketing Analytics and Data Consulting Analyst at Havas Media
+                <span className={`${styles.project_icon}`}>
+                  <ArrowUp size='18px'/>
+                </span>
             </Link>
-          </h2>
-          <p className={`${styles.work_role}`}>
-            <span>Analytics Engineer</span> <span>2020 - 2021</span>
-          </p>
-          <p className={`${styles.work_role}`}>
-            <span>Sales Analytics & Market Research</span> <span>2018 - 2020</span>
-          </p>
-          <p>
-            A whole paragraph here about YU and my contribution
-          </p>
+            <div className={`${styles.project_body}`}>
+              <ul className={`${styles.project_stack}`}>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>SQL</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>dbt</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Snowflake</div>
+                </li>
+                <li>
+                  <div className={`${styles.project_stack_element}`}>Tableau</div>
+                </li>
+              </ul>
+              <div className={`${styles.project_description}`}>
+                <p>
+                  Some text about Year Up
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> */}
+      </div>
     </main>
   );
 }
