@@ -144,7 +144,7 @@ export default function Experience() {
           <div className={`${styles.project}`}>
           <Link
               className={`embedded_link ${styles.project_link}`}
-              href={'https://havasmedia.com/'}
+              href={'https://havasmedianetwork.com/'}
               target='_blank'
             >
                 Data Consulting Analyst at Havas Media
