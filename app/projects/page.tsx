@@ -89,7 +89,7 @@ export default function Projects() {
         </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  At Roadtrip Nation, we've built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders.
+                  At Roadtrip Nation, we&aposve built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders.
                 </p>
               </div>
             </div>

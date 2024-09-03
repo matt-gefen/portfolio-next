@@ -52,7 +52,7 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  In this role, I've specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
+                  In this role, I&aposve specialized in online learning platform development. I build interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Recently, I have been leading the migration to Next.js 14 and Typescript for enhanced performance.
                 </p>
               </div>
             </div>
