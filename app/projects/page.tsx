@@ -224,7 +224,7 @@ export default function Projects() {
           <div className={`${styles.project} ${styles.project_non_grid}`}>
             <Link
               className={`embedded_link ${styles.project_link}`}
-              href={'https://mattgefen.com/'}
+              href={'https://mattgefen.netlify.app/'}
               target='_blank'
             >
               Original Portfolio Site
