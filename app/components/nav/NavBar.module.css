@@ -1,11 +1,43 @@
 .nav_bar {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  /* gap: 20px; */
+  .nav_bar_links {
+    display: flex;
+    gap: 20px;
+  }
   .active_route {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
     color: #00ffbb;
+  }
+  .social_links {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 8px;
+    .social_link {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      padding: 4px;
+      padding-left: 0px;
+      gap: 8px;
+      & svg {
+        fill: #FBFCFC;
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .social_link:hover {
+      & svg {
+        fill: #09bc8a;
+      }
+    }
+    .social_link:after {
+      display: none;
+    }
   }
 }

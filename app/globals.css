@@ -25,6 +25,7 @@ body {
 
 main {
   margin-top: 80px;
+  padding-bottom: 50px;
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -103,3 +104,4 @@ h3 {
     fill: #00ffbb;
   }
 }
+
