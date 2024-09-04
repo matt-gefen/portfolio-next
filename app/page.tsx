@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import Github from "./components/icons/Github";
 import LinkedIn from "./components/icons/LinkedIn";
 import ProfileIcon from "@/app/assets/M@Icon.png"
-import Mail from "./components/icons/Mail";
 
 export default function Home() {
   return (
