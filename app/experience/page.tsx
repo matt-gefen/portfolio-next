@@ -91,7 +91,7 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  I standardized data structures and crafted conformed dimensional models using dbt, allowing teams to access and use data more effectively. On top of this, I build decision support tools and accessible dashboards for teams across the organization. 
+                  I standardized data structures and crafted conformed dimensional models using dbt, allowing teams to access and use data more effectively. On top of this, I built decision support tools and accessible dashboards for teams across the organization. 
                 </p>
               </div>
             </div>

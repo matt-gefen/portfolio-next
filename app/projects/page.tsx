@@ -140,7 +140,7 @@ export default function Projects() {
               </ul> */}
               <div className={`${styles.project_description}`}>
                 <p>
-                  An in-depth, classroom-based immersive for students and educators. This course guides students through a reflection on their own skills and connects those with career options and real-world stories from the RTN interview archive.
+                  An in-depth, classroom-based immersive for students and educators. This course guides students through a reflection on their own skills and connects those with career options and real-world stories from the Roadtrip Nation interview archive.
                 </p>
               </div>
             </div>
