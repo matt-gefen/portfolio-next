@@ -33,18 +33,12 @@ export default function Home() {
       </div>
       <div className={`${styles.main_body}`}>
         <p>
-          Hi, I&apos;m Matt Gefen! I&apos;m a developer living in Boulder, CO currently working at <span><Link className={`${styles.embedded_link}`} href={'roadtripnation.com'}>Roadtrip Nation</Link></span> crafting impactful software.
-        </p>
-        <p>
-          I create accessible and educational experiences using best-in-class video content. These tools enable students looking for passion in their careers to find guidance fit for them.
+          Hi, I&apos;m Matt Gefen! I&apos;m a developer living in Boulder, CO currently working at <span><Link className={`${styles.embedded_link}`} href={'https://www.assemblyai.com/'}>AssemblyAI</Link></span>. I work to craft seamless web experiences for people using Assembly to solve real problems.
         </p>
         <p>
           When I&apos;m not working, I&apos;m likely outside with my partner Olivia and our dog Basil, playing a tabletop game, or reading a book.
         </p>
-        {/* <p>
-         I'd love to talk to you about technology, tabletop games, fantasy books, video-games, and the outdoors!
-        </p> */}
-        <p>Reach out here: <Link className={`embedded_link`} href={'mailto:matt.gefen@gmail.com'} target="_blank">matt.gefen@gmail.com</Link></p>
+        <p>Reach out here: <Link className={`embedded_link`} href={'mailto:matt.gefen@pm.me'} target="_blank">matt.gefen@pm.me</Link></p>
         <div className={`${styles.image_container}`}>
           <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_0979-dy2hRgg2FFhZLO5O2xxkCGqfdfdN8L.png)"}}/>
           <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_4906-RUBVCAMlUqdymgv6f3ldVLgl6NH8bo.png)"}}/>
