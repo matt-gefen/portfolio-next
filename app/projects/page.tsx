@@ -1,8 +1,6 @@
 'use client';
 import Link from 'next/link';
 import styles from './page.module.css'
-import ArrowOut from '../components/icons/ArrowOut';
-import Image from 'next/image';
 import ArrowUp from '../components/icons/ArrowUp';
 
 export default function Projects() {

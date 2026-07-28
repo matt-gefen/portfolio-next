@@ -40,10 +40,11 @@ export default function Home() {
         </p>
         <p>Reach out here: <Link className={`embedded_link`} href={'mailto:matt.gefen@pm.me'} target="_blank">matt.gefen@pm.me</Link></p>
         <div className={`${styles.image_container}`}>
-          <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_0979-dy2hRgg2FFhZLO5O2xxkCGqfdfdN8L.png)"}}/>
-          <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_4906-RUBVCAMlUqdymgv6f3ldVLgl6NH8bo.png)"}}/>
-          <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_8246-xJuE3IPkRHGDxb4QAsGAsoxxBuSkEa.png)"}}/>
-          <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_8164-k5xGDKVuYIghCJ5EbJ9o0nYSb3zWOO.png)"}}/>
+          {/* <div className={`${styles.image_portrait}`} style={{backgroundImage: "url(https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_0979-dy2hRgg2FFhZLO5O2xxkCGqfdfdN8L.png)"}}/> */}
+          <img className={styles.image_portrait} src="https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_0979-dy2hRgg2FFhZLO5O2xxkCGqfdfdN8L.png" alt="" />
+          <img className={styles.image_portrait} src="https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_4906-RUBVCAMlUqdymgv6f3ldVLgl6NH8bo.png"/>
+          <img className={styles.image_portrait} src="https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_8246-xJuE3IPkRHGDxb4QAsGAsoxxBuSkEa.png"/>
+          <img className={styles.image_portrait} src="https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/IMG_8164-k5xGDKVuYIghCJ5EbJ9o0nYSb3zWOO.png"/>
         </div>
       </div>
     </main>
