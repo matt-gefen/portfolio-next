@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Nunito_Sans } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/nav/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

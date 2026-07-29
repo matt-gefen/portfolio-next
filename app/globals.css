@@ -7,7 +7,7 @@
 html,
 body {
   color-scheme: dark;
-  background-color: #0F1012;
+  background-color: #0f1012;
   padding-top: 1rem;
   padding-left: auto;
   padding-right: auto;
@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  color: #DEE2E6;
+  color: #dee2e6;
 }
 
 main {
@@ -48,7 +48,7 @@ a {
 }
 
 a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -73,12 +73,12 @@ h1 {
   /* font-size: 3rem; */
   font-style: normal;
   font-weight: 700;
-  color: #FBFCFC;
+  color: #fbfcfc;
 }
 
 h2 {
   /* font-size: 2rem; */
-  color: #CED4DA;
+  color: #ced4da;
 }
 h3 {
   /* font-size: 1.5rem; */
@@ -104,4 +104,3 @@ h3 {
     fill: #00ffbb;
   }
 }
-
