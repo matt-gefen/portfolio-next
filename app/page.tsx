@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Github from "./components/icons/Github";
 import LinkedIn from "./components/icons/LinkedIn";
 import ProfileIcon from "@/app/assets/M@Icon.png";
+import { Title } from "@mantine/core";
 
 export default function Home() {
   return (
@@ -20,11 +21,18 @@ export default function Home() {
         </div>
         <div className={`${styles.hero_right}`}>
           <div className={`${styles.hero_text}`}>
-            <h1>Matt Gefen</h1>
+            <Title c="white">Matt Gefen</Title>
+            {/* <h1>Matt Gefen</h1> */}
             <div className={`${styles.hero_subtitle}`}>
-              <h2 className={`${styles.rotating_text}`}>Full-Stack Engineer</h2>
-              <h2 className={`${styles.rotating_text}`}>Lifelong Learner</h2>
-              <h2 className={`${styles.rotating_text}`}>Problem Solver</h2>
+              <Title order={3} c="teal.2" className={`${styles.rotating_text}`}>
+                Full-Stack Engineer
+              </Title>
+              <Title order={3} c="teal.2" className={`${styles.rotating_text}`}>
+                Lifelong Learner
+              </Title>
+              <Title order={3} c="teal.2" className={`${styles.rotating_text}`}>
+                Problem Solver
+              </Title>
             </div>
             <div className={`${styles.social_links}`}>
               <Link
