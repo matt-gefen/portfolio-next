@@ -9,6 +9,9 @@ import {
   ColorSchemeScript,
   MantineProvider,
   mantineHtmlProps,
+  AppShell,
+  AppShellHeader,
+  AppShellMain,
 } from "@mantine/core";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
@@ -35,8 +38,12 @@ export default function RootLayout({
       </head>
       <body className={nunito.className}>
         <MantineProvider theme={theme} defaultColorScheme="dark">
-          <NavBar />
-          {children}
+          <AppShell padding="xl" header={{ height: 50 }}>
+            <AppShellHeader>
+              <NavBar />
+            </AppShellHeader>
+            <AppShellMain>{children}</AppShellMain>
+          </AppShell>
         </MantineProvider>
       </body>
     </html>
