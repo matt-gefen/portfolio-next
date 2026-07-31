@@ -5,7 +5,18 @@ import { defineConfig } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 export default defineConfig([
-  { ignores: [".next/**"] },
+  {
+    ignores: [
+      ".next/**",
+      "node_modules/",
+      ".next/",
+      "out/",
+      "build/",
+      "dist/",
+      "*.config.js",
+      "*.config.ts",
+    ],
+  },
   eslintConfigPrettier,
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
@@ -16,6 +27,18 @@ export default defineConfig([
   {
     rules: {
       "react/react-in-jsx-scope": "off",
+      "no-console": [
+        "warn",
+        {
+          allow: ["warn", "error"],
+        },
+      ],
+      "no-debugger": "error",
+      "no-alert": "error",
+      "prefer-const": "error",
+      "no-var": "error",
+      "object-shorthand": "error",
+      "prefer-template": "error",
     },
   },
 ]);

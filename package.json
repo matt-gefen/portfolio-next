@@ -6,9 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --config eslint.config.ts .",
-    "format": "pnpm exec prettier . --write",
+    "lint": "exec eslint",
+    "lint:fix": "exec eslint --fix",
+    "format": "prettier --write",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "pre-commit": "lint-staged",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@mantine/core": "^9.5.0",
@@ -30,6 +43,7 @@
     "globals": "^17.8.0",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
+    "lint-staged": "^17.2.0",
     "postcss": "^8.5.25",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",

@@ -1,2 +1,40 @@
-pnpm lint
-pnpm format
+#!/usr/bin/env sh
+[ -n "$CI" ] && exit 0
+
+# Check if lint-staged is installed
+if ! command -v lint-staged &> /dev/null; then
+  echo "lint-staged not found - 'pnpm add --save-dev lint-staged'"
+  exit 1
+fi
+
+echo "🔍 Running pre-commit checks..."
+
+# Run type checking
+echo "📝 Checking TypeScript types..."
+pnpm type-check || {
+  echo "❌ TypeScript errors found. Please fix them before committing."
+  exit 1
+}
+
+# Run linting
+echo "🔧 Running ESLint..."
+pnpm lint || {
+  echo "❌ ESLint errors found. Please fix them before committing."
+  exit 1
+}
+
+# Run build check
+echo "🏗️  Checking build..."
+pnpm build || {
+  echo "❌ Build failed. Please fix build errors before committing."
+  exit 1
+}
+
+# Run lint-staged (formatting and auto-fix)
+echo "✨ Running lint-staged..."
+pnpm lint-staged || {
+  echo "❌ Lint-staged failed. Please fix formatting issues before committing."
+  exit 1
+}
+
+echo "✅ All pre-commit checks passed!"
