@@ -22,7 +22,6 @@ export default function Home() {
         <div className={`${styles.hero_right}`}>
           <div className={`${styles.hero_text}`}>
             <Title c="white">Matt Gefen</Title>
-            {/* <h1>Matt Gefen</h1> */}
             <div className={`${styles.hero_subtitle}`}>
               <Title order={3} c="teal.2" className={`${styles.rotating_text}`}>
                 Full-Stack Engineer
