@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript forceColorScheme="dark"/>
+        <ColorSchemeScript forceColorScheme="dark" />
       </head>
       <body className={nunito.className}>
         <MantineProvider theme={theme} forceColorScheme="dark">

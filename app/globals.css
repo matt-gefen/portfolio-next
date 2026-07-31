@@ -43,7 +43,7 @@ a:hover:after {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid var(--mantine-color-teal-3);;
+  border-top: 1px solid var(--mantine-color-teal-3);
   margin-top: 20px;
   padding: 0;
 }
