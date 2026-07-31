@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --config eslint.config.ts .",
-    "format": "pnpm exec prettier . --write"
+    "format": "pnpm exec prettier . --write",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mantine/core": "^9.5.0",
@@ -27,6 +28,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.8.0",
+    "husky": "^9.1.7",
     "jiti": "^2.7.0",
     "postcss": "^8.5.25",
     "postcss-preset-mantine": "^1.18.0",

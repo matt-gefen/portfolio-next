@@ -59,11 +59,11 @@
   margin-top: 30px;
 
   .embedded_link {
-    color: #09bc8a;
+    color: var(--mantine-color-teal-3);
   }
 
   .embedded_link:hover {
-    color: #00ffbb;
+    color: var(--mantine-color-teal-3);
   }
 }
 
@@ -91,7 +91,7 @@
 
   .social_link:hover {
     & svg {
-      fill: #09bc8a;
+      fill: var(--mantine-color-teal-3);
     }
   }
 

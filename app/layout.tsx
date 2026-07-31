@@ -34,12 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript forceColorScheme="dark"/>
       </head>
       <body className={nunito.className}>
-        <MantineProvider theme={theme} defaultColorScheme="dark">
+        <MantineProvider theme={theme} forceColorScheme="dark">
           <AppShell padding="xl" header={{ height: 50 }}>
-            <AppShellHeader>
+            <AppShellHeader withBorder={false}>
               <NavBar />
             </AppShellHeader>
             <AppShellMain>{children}</AppShellMain>

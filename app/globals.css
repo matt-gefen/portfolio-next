@@ -5,8 +5,8 @@
 }
 
 :root[data-mantine-color-scheme="dark"] {
-  --mantine-color-body: #0f1012 !important;
-  --mantine-color-text: #dee2e6 !important;
+  --mantine-color-body: var(--mantine-color-dark-9) !important;
+  --mantine-color-text: var(--mantine-color-gray-2) !important;
 }
 
 a {
@@ -24,13 +24,14 @@ a:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #00ffbb;
+  /* background-color: #00ffbb; */
+  background-color: var(--mantine-color-teal-3);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 a:hover {
-  color: #00ffbb;
+  color: var(--mantine-color-teal-3);
 }
 
 a:hover:after {
@@ -42,19 +43,23 @@ a:hover:after {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #09bc8a;
+  border-top: 1px solid var(--mantine-color-teal-3);;
   margin-top: 20px;
   padding: 0;
 }
 .embedded_link {
-  color: #09bc8a;
+  /* color: #09bc8a; */
+  color: var(--mantine-color-teal-3);
   & svg {
-    fill: #09bc8a;
+    /* fill: #09bc8a; */
+    fill: var(--mantine-color-teal-3);
   }
 }
 .embedded_link:hover {
-  color: #00ffbb;
+  /* color: #00ffbb; */
+  color: var(--mantine-color-teal-3);
   & svg {
-    fill: #00ffbb;
+    /* fill: #00ffbb; */
+    fill: var(--mantine-color-teal-3);
   }
 }
