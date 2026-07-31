@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 60px;
 }
 .projects_body_child {
   display: flex;

@@ -12,6 +12,7 @@ import {
   AppShell,
   AppShellHeader,
   AppShellMain,
+  Container,
 } from "@mantine/core";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
@@ -38,11 +39,13 @@ export default function RootLayout({
       </head>
       <body className={nunito.className}>
         <MantineProvider theme={theme} forceColorScheme="dark">
-          <AppShell padding="xl" header={{ height: 50 }}>
+          <AppShell padding="md" header={{ height: 50 }}>
             <AppShellHeader withBorder={false}>
               <NavBar />
             </AppShellHeader>
-            <AppShellMain>{children}</AppShellMain>
+            <AppShellMain>
+              <Container pb="lg">{children}</Container>
+            </AppShellMain>
           </AppShell>
         </MantineProvider>
       </body>
