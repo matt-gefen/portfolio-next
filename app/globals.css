@@ -6,6 +6,7 @@
 
 :root[data-mantine-color-scheme="dark"] {
   --mantine-color-body: #0f1012 !important;
+  --mantine-color-text: #dee2e6 !important;
 }
 
 a {
