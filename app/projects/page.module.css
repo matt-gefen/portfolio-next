@@ -30,7 +30,7 @@
   }
 }
 .company {
-  color: #09bc8a;
+  color: var(--mantine-color-teal-3);
 }
 .project_parent_link {
   & p {
@@ -39,7 +39,7 @@
 }
 .project_parent_link:hover {
   .company {
-    color: #00ffbb;
+    color: var(--mantine-color-teal-3);
   }
 }
 .project {
@@ -91,17 +91,20 @@
       display: inline-block;
     }
     & svg {
-      fill: #09bc8a;
+      fill: var(--mantine-color-teal-3);
       transition: transform 100ms ease-in-out;
     }
   }
   .project_link:hover {
-    color: #00ffbb;
+    color: var(--mantine-color-teal-3);
     & svg {
-      fill: #00ffbb;
+      fill: var(--mantine-color-teal-3);
       transform: translateX(1px) translateY(-3px);
     }
   }
+}
+.project_secondary {
+  margin-top: 20px;
 }
 .project:hover {
   background-color: #1e1f23;
@@ -122,7 +125,7 @@
     padding: 6px 10px;
     background: #09bc8a20;
     border-radius: 20px;
-    color: #00ffbb;
+    color: var(--mantine-color-teal-3);
     font-size: 14px;
     @media (max-width: 900px) {
       width: fit-content;
@@ -157,11 +160,11 @@
   padding: 10px;
   align-items: flex-end;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   border-radius: 0.25rem;
   @media (max-width: 900px) {
     height: 100px;
-    background-position: center;
+    background-position: top;
     border-radius: 0 0 0.25rem 0.25rem;
   }
   & p {

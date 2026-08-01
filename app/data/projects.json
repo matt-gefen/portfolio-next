@@ -7,10 +7,33 @@
         {
           "name": "User Dashboard",
           "link": "https://assemblyai.com/dashboard/home",
-          "linkName": "Brighten Your Future Hub",
-          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/phl%20image-c38BIz2KyUlYpokU5Bv5suzixJVJVj.jpg",
-          "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut luctus aliquet, sem mi ultricies lacus, vitae bibendum est dui in diam."
+          "linkName": "AssemblyAI Dashboard",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/portfolio/AAI%20Dash.png",
+          "description": "AssemblyAI's user account dashboard allows users to view and manage their account information, find helpful resources, and try things out in the Playground. Each core AAI product comes with its own unique Playground. Over the course of my time at Assembly, I contributed to multiple refactors, redesigns, and new feature launches that touched nearly all of the dashboard's functions."
+        },
+        {
+          "name": "Onboarding Configuration Wizard",
+          "link": "https://www.assemblyai.com/dashboard/onboarding",
+          "linkName": "Configuration Wizard",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/portfolio/wizard-1.png",
+          "description": "I led the development of the configuration wizard, a feature of the authenticated experience, guides user's through a simple onboarding process that provides new users with resources and recipes that match their exact use case. Each recipe is integrated with and selectable in the Playground as presets."
+        },
+        {
+          "name": "Usage Management",
+          "link": "https://www.assemblyai.com/dashboard/usage",
+          "linkName": "Usage Dashboard",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/portfolio/usage.png",
+          "description": "I drove the front-end development of the pages where users can manage their product usage and cost. In addition, on the back-end I managed the flow of data between Metronome, our provider for billing management, and the dashboard through an Account Management Service suite of APIs."
         }
+      ],
+      "skills": [
+        "TypeScript",
+        "Next.js",
+        "HTML & SCSS",
+        "React",
+        "PostgreSQL",
+        "Python",
+        "FastAPI"
       ]
     },
     {

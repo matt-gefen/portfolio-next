@@ -59,14 +59,14 @@ export default function Experience() {
               </ul>
               <div className={`${styles.project_description}`}>
                 <p>
-                  At Assembly, I have been a core member of the Product
-                  Experience team. I was responsible for building and
-                  maintaining our feature-rich user dashboard and product
-                  playground. Here, users can find all key information on their
-                  usage of AAI products and try them out in a safe and
-                  streamlined environment. On top of this, I was responsible for
-                  developing and managing our accounts management services on
-                  both the front and back end.
+                  At Assembly, I was a core member of the Product Experience
+                  team. I was responsible for building and maintaining our
+                  feature-rich user dashboard and product playground. Here,
+                  users can find all key information on their usage of AAI
+                  products and try them out in a safe and streamlined
+                  environment. On top of this, I was responsible for developing
+                  and implementing our accounts management service on both the
+                  front and back end.
                 </p>
               </div>
             </div>

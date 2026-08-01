@@ -14,6 +14,9 @@ importers:
       '@mantine/hooks':
         specifier: ^9.5.0
         version: 9.5.0(react@19.2.4)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       lodash:
         specifier: ^4.17.21
         version: 4.18.1

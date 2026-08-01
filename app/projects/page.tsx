@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import ArrowUp from "../components/icons/ArrowUp";
 import { Accordion, Box } from "@mantine/core";
 import projectsData from "../data/projects.json";
+import clsx from "clsx";
 
 interface ProjectData {
   id: string;
@@ -15,12 +16,14 @@ interface ProjectData {
       description: string;
       linkName?: string;
       image?: string;
+      skills?: string[];
     },
   ];
+  skills?: string[];
 }
 
 export default function Projects() {
-  const projects = projectsData.projects as ProjectData[];
+  const projects = projectsData.projects as unknown as ProjectData[];
   const items = projects.map((item) => {
     return (
       <Accordion.Item key={item.id} value={item.id}>
@@ -54,6 +57,21 @@ export default function Projects() {
                         <p>{panel.description}</p>
                       </div>
                     </div>
+                    {panel.skills && (
+                      <ul className={`${styles.project_stack}`}>
+                        {panel.skills?.map((skill: string, index: number) => {
+                          return (
+                            <li key={index}>
+                              <div
+                                className={`${styles.project_stack_element}`}
+                              >
+                                {skill}
+                              </div>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
                   </div>
                   {panel.image && (
                     <div className={`${styles.project_image_link_container}`}>
@@ -76,6 +94,31 @@ export default function Projects() {
                 </div>
               );
             })}
+            {item.skills && (
+              <div
+                className={clsx(
+                  styles.project_secondary,
+                  styles.project_skills_only,
+                )}
+                id="rtn skills"
+              >
+                <div
+                  className={`${styles.project} ${styles.project_skills_only}`}
+                >
+                  <ul className={`${styles.project_stack}`}>
+                    {item.skills?.map((skill: string, index: number) => {
+                      return (
+                        <li key={index}>
+                          <div className={`${styles.project_stack_element}`}>
+                            {skill}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            )}
           </div>
         </Accordion.Panel>
       </Accordion.Item>
