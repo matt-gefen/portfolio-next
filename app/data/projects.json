@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "aai",
+      "title": "AssemblyAI",
+      "items": [
+        {
+          "name": "User Dashboard",
+          "link": "https://assemblyai.com/dashboard/home",
+          "linkName": "Brighten Your Future Hub",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/phl%20image-c38BIz2KyUlYpokU5Bv5suzixJVJVj.jpg",
+          "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut luctus aliquet, sem mi ultricies lacus, vitae bibendum est dui in diam."
+        }
+      ]
+    },
+    {
+      "id": "rtn",
+      "title": "Roadtrip Nation",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Next.js",
+        "HTML & SCSS",
+        "React",
+        "MongoDB"
+      ],
+      "items": [
+        {
+          "name": "Skills Navigator Workforce Hubs",
+          "link": "https://roadtripnation.com/workforce/phl",
+          "linkName": "Brighten Your Future Hub",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/phl%20image-c38BIz2KyUlYpokU5Bv5suzixJVJVj.jpg",
+          "description": "A set of modular career hubs that provide students and young adults with tools to explore career options in their local communities. Each hub comes with a custom-tailored pathways experience that begins with a short quiz."
+        },
+        {
+          "name": "Leader Profiles",
+          "link": "https://roadtripnation.com/leader/jimmy-chin",
+          "linkName": "Jimmy Chin Profile",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/jimmy-chin.webp",
+          "description": "At Roadtrip Nation, we've built an archive of over 8,000 interviews with unique leaders across the US, each detailing a one of a kind career journey. I spearheaded implementation of a new, modern, design that showcases these leaders."
+        },
+        {
+          "name": "Roadtrip Nation Experience Course",
+          "link": "https://roadtripnation.com/experience/course/rtn/overview",
+          "linkName": "RTN Experience Course",
+          "image": "https://1u4j97n0laxnso2y.public.blob.vercel-storage.com/rtn%20course%20hero-WGpQUu1BWQAS1WUPhVhpgXtvVePFJV.jpg",
+          "description": "An in-depth, classroom-based immersive for students and educators. This course guides students through a reflection on their own skills and connects those with career options and real-world stories from the Roadtrip Nation interview archive."
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "title": "Side Projects",
+      "items": [
+        {
+          "name": "Radiant Hack",
+          "link": "https://radiant-hack.vercel.app/",
+          "skills": ["TypeScript", "Next.js", "HTML & CSS"],
+          "description": "A WIP documentation site for ttrpg house rules. Based on The Black Hack and made with Nextra."
+        },
+        {
+          "name": "Original Portfolio Site",
+          "link": "https://mattgefen.netlify.app/",
+          "skills": ["React", "HTML & SCSS", "Netlify"],
+          "description": "The previous iteration of my personal portfolio website!"
+        },
+        {
+          "name": "Pong",
+          "link": "https://github.com/matt-gefen/rm_pong",
+          "skills": ["C#", "Unity Game Engine", "HTML & CSS"],
+          "description": "Simple game of Pong, complete with music. Downloadable on MacOS."
+        },
+        {
+          "name": "Poemverse",
+          "link": "https://github.com/matt-gefen/poemverse",
+          "skills": ["Python", "Django", "PostgreSQL"],
+          "description": "Full-stack poetry anthology builder using poems sources from the PoetryDB api. Currently offline."
+        },
+        {
+          "name": "BirbWatcher",
+          "link": "https://github.com/matt-gefen/birb-watcher",
+          "skills": ["JavaScript", "MongoDB", "Express"],
+          "description": "Personal bird watching log with bird taxonomy and species detail sourced from Ebird."
+        }
+      ]
+    }
+  ]
+}
