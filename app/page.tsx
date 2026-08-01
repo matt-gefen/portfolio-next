@@ -15,7 +15,11 @@ export default function Home() {
     <main>
       <div className={`${styles.hero}`}>
         <div className={`${styles.hero_left}`}>
-          <Skeleton visible={avatarLoading} circle={true} height={150}>
+          <Skeleton
+            visible={avatarLoading}
+            circle={true}
+            height={"fit-content"}
+          >
             <Image
               src={ProfileIcon}
               alt={"Matt Icon"}
