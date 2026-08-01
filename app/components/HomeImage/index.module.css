@@ -1,0 +1,7 @@
+.image_portrait {
+  width: 240px;
+  height: 340px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 0.25rem;
+}

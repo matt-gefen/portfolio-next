@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Nunito_Sans } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/nav/NavBar";
+import "@mantine/core/styles.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import {
+  createTheme,
+  ColorSchemeScript,
+  MantineProvider,
+  mantineHtmlProps,
+  AppShell,
+  AppShellHeader,
+  AppShellMain,
+  Container,
+} from "@mantine/core";
+
 const nunito = Nunito_Sans({ subsets: ["latin"] });
+
+const theme = createTheme({
+  primaryColor: "teal",
+  fontFamily: "Nunito Sans",
+});
 
 export const metadata: Metadata = {
   title: "Matt Gefen",
@@ -17,10 +33,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" {...mantineHtmlProps}>
+      <head>
+        <ColorSchemeScript forceColorScheme="dark" />
+      </head>
       <body className={nunito.className}>
-        <NavBar />
-        {children}
+        <MantineProvider theme={theme} forceColorScheme="dark">
+          <AppShell padding="md" header={{ height: 50 }}>
+            <AppShellHeader withBorder={false}>
+              <NavBar />
+            </AppShellHeader>
+            <AppShellMain>
+              <Container pb="lg">{children}</Container>
+            </AppShellMain>
+          </AppShell>
+        </MantineProvider>
       </body>
     </html>
   );
