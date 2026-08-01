@@ -1,23 +1,32 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Github from "./components/icons/Github";
 import LinkedIn from "./components/icons/LinkedIn";
 import ProfileIcon from "@/app/assets/M@Icon.png";
-import { Title } from "@mantine/core";
+import { Skeleton, Title } from "@mantine/core";
+import HomeImage from "./components/HomeImage";
+import { useState } from "react";
 
 export default function Home() {
+  const [avatarLoading, setAvatarLoading] = useState(true);
   return (
     <main>
       <div className={`${styles.hero}`}>
         <div className={`${styles.hero_left}`}>
-          <Image
-            src={ProfileIcon}
-            alt={"Matt Icon"}
-            width={150}
-            height={150}
-            className={`${styles.hero_profile}`}
-          />
+          <Skeleton visible={avatarLoading} circle={true} height={150}>
+            <Image
+              src={ProfileIcon}
+              alt={"Matt Icon"}
+              width={150}
+              height={150}
+              className={`${styles.hero_profile}`}
+              onLoad={() => {
+                setAvatarLoading(false);
+              }}
+            />
+          </Skeleton>
         </div>
         <div className={`${styles.hero_right}`}>
           <div className={`${styles.hero_text}`}>
@@ -82,42 +91,10 @@ export default function Home() {
           </Link>
         </p>
         <div className={`${styles.image_container}`}>
-          <Image
-            className={styles.image_portrait}
-            src="/wedding.png"
-            alt=""
-            height="340"
-            width="240"
-            placeholder="blur"
-            blurDataURL="/wedding.png"
-          />
-          <Image
-            className={styles.image_portrait}
-            src="/rockies.png"
-            alt=""
-            height="340"
-            width="240"
-            placeholder="blur"
-            blurDataURL="/rockies.png"
-          />
-          <Image
-            className={styles.image_portrait}
-            src="/dog.png"
-            alt=""
-            height="340"
-            width="240"
-            placeholder="blur"
-            blurDataURL="/dog.png"
-          />
-          <Image
-            className={styles.image_portrait}
-            src="/hike.png"
-            alt=""
-            height="340"
-            width="240"
-            placeholder="blur"
-            blurDataURL="/hike.png"
-          />
+          <HomeImage src={"/wedding.png"} />
+          <HomeImage src={"/rockies.png"} />
+          <HomeImage src={"/dog.png"} />
+          <HomeImage src={"/hike.png"} />
         </div>
       </div>
     </main>
