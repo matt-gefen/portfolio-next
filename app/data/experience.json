@@ -1,38 +1,64 @@
 {
-  "tabs": [
+  "experiences": [
     {
+      "id": "assembly_ai",
+      "title": "Software Engineer",
+      "subtitle": "AssemblyAI",
+      "time": "2024 - 2026",
+      "link": "https://assemblyai.com/",
+      "description": "At Assembly, I was a core member of the Product Experience team. I was responsible for building and maintaining our feature-rich user dashboard and product playground. Here, users can find all key information on their usage of AAI products and try them out in a safe and streamlined environment. On top of this, I was responsible for developing and implementing our accounts management service on both the front and back end.",
+      "skills": [
+        "TypeScript",
+        "Next.js",
+        "Python",
+        "FastAPI",
+        "React",
+        "PostgreSQL",
+        "Terraform"
+      ]
+    },
+    {
+      "id": "roadtrip_nation",
       "title": "Full Stack Engineer",
       "subtitle": "Roadtrip Nation",
-      "time": "February 2022 - Current",
+      "time": "2022 - 2024",
       "link": "https://roadtripnation.com/",
-      "bullets": [
-        "Build interactive and accessible web courses geared towards connecting over 15,000 students annually with tangible career paths using React/Typescript.",
-        "Craft RESTful APIs and supporting data infrastructure to provide custom resources to over 30 unique partners.",
-        "Architect the back end and front end of a vertical video playlist feature inspired by YouTube Shorts, enabling the presentation of over 100 hours of unique video content to more than 2,000 daily users.",
-        "Leading the refactor and migration of products to a modern codebase using Next.js 14, improving performance and maintainability with a seamless user experience."
+      "description": "In this role, I specialized in online learning platform development. I built interactive and accessible courses using React/Typescript. Other key aspects of the role have included building robust API infrastructure and an innovative vertical video playlist feature. Prior to leaving this role, I was leading a Next.js upgrade and Typescript migration for enhanced performance and code quality.",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Next.js",
+        "HTML & SCSS",
+        "React",
+        "MongoDB"
       ]
     },
     {
+      "id": "yearup_ae",
       "title": "Analytics Engineer",
       "subtitle": "Year Up",
-      "time": "August 2020 - May 2021",
+      "time": "2020 - 2021",
       "link": "https://www.yearup.org/",
-      "bullets": [
-        "Developed conformed dimensional models using dbt to enable consistent daily reporting of critical data for high-level staff.",
-        "Deployed and maintained ELT pipelines and infrastructure using Fivetran and Matillion to enable over 500 internal clients to use organizational data flexibly",
-        "Built decision support tools in Tableau that directly inform operational and strategic actions for over 90% of staff."
-      ]
+      "description": "I standardized data structures and crafted conformed dimensional models using dbt, allowing teams to access and use data more effectively. On top of this, I built decision support tools and accessible dashboards for teams across the organization.",
+      "skills": ["SQL", "dbt", "Snowflake", "Tableau"]
     },
     {
+      "id": "yearup_mra",
       "title": "Sales and Market Research Analyst",
       "subtitle": "Year Up",
       "link": "https://www.yearup.org/",
-      "time": "November 2018 - August 2020",
-      "bullets": [
-        "Automated reporting of key sales metrics to internal leadership and board members with SQL and Python.",
-        "Developed standardized analytics tools in Tableau to provide users with accessible and real-time access to demand KPIs.",
-        "Trained 100+ staff members on leveraging data for decision making through guided workshops and individual sessions."
-      ]
+      "time": "2018 - 2020",
+      "description": "Automated the reporting of key sales metrics for internal leadership and board members using SQL and Python. I also developed standardized analytics tools in Tableau, providing corporate engagement specialists with accessible, real-time insights into demand KPIs.",
+      "skills": ["SQL", "dbt", "Snowflake", "Tableau"]
+    },
+    {
+      "id": "havas",
+      "title": "Marketing Analytics and Data Consulting Analyst",
+      "subtitle": "Havas Media",
+      "link": "https://havasmedianetwork.com/",
+      "time": "2017 - 2018",
+      "description": "Analyzed the impact of media and marketing strategies across all channels for  national retail clients, driving key optimizations.",
+      "skills": ["Excel", "Google Tag Manager/Analytics"]
     }
   ]
 }
