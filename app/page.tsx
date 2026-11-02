@@ -88,10 +88,10 @@ export default function Home() {
           Reach out here:{" "}
           <Link
             className={`embedded_link`}
-            href={"mailto:matt.gefen@pm.me"}
+            href={"mailto:hello@mattgefen.com"}
             target="_blank"
           >
-            matt.gefen@pm.me
+            hello@mattgefen.com
           </Link>
         </p>
         <div className={`${styles.image_container}`}>

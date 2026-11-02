@@ -54,9 +54,6 @@ export default function NavBar() {
           >
             <LinkedIn />
           </Link>
-          {/* <Link href={'mailto: matt.gefen@gmail.com'} target="_blank" className={`${styles.social_link}`}>
-                  <Mail/>
-                </Link> */}
         </div>
       )}
     </div>
